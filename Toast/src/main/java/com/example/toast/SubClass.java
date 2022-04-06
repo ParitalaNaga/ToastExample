@@ -1,17 +1,17 @@
 package com.example.toast;
 
 public class SubClass {
-    interface MyCallBack {
+    public interface MyCallBack {
         void callbackReturn();
     }
 
     MyCallBack myCallBack;
 
-    void setMyCallBack(MyCallBack myCallBack) {
+    public void setMyCallBack(MyCallBack myCallBack) {
         this.myCallBack = myCallBack;
     }
 
-    void doSomething() {
+    public void doSomething() {
         myCallBack.callbackReturn();
     }
 
